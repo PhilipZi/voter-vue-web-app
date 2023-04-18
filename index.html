@@ -29,7 +29,11 @@
                 </h2>
               </div>
               <div class="card-body">
-                <div class="d-flex" v-for="submission in submissions">
+                <div
+                  class="d-flex"
+                  v-for="submission in submissions"
+                  v-bind:key="submission.id"
+                >
                   <div class="d-shrink-0">
                     <img src="https://via.placeholder.com/60" alt="" />
                   </div>
