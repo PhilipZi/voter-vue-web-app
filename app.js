@@ -21,6 +21,8 @@ const app = Vue.createApp({
       const submission = this.submissions.find(
         (submission) => submission.id === submissionId
       );
+
+      submission.votes++;
       // this.submissions[0].votes++;
     },
   },
