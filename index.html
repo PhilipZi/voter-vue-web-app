@@ -31,7 +31,7 @@
               <div class="card-body">
                 <div
                   class="d-flex"
-                  v-for="submission in submissions"
+                  v-for="(submission, index) in sortedSubmissions"
                   v-bind:key="submission.id"
                 >
                   <div class="d-shrink-0">
