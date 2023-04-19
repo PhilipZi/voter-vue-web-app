@@ -21,6 +21,11 @@ const app = Vue.createApp({
         "text-white": this.totalVotes >= 50,
       };
     },
+    carTitleFontSize() {
+      return {
+        fontSize: this.totalVotes + "px",
+      };
+    },
   },
   methods: {
     upvote(submissionId) {
