@@ -48,7 +48,7 @@ app.component("SubmissionListItem", {
       <span
         class="float-end text-primary"
         style="cursor: pointer"
-        v-on:click="upvote()"
+        @click="upvote()"
         ><i class="fa fa-chevron-up"></i>
         <strong>{{submission.votes}}</strong></span
       >
