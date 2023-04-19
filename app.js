@@ -15,6 +15,12 @@ const app = Vue.createApp({
         return b.votes - a.votes;
       });
     },
+    cardHeaderBackgroundColor() {
+      return {
+        "bg-primary": this.totalVotes >= 50,
+        "text-white": this.totalVotes >= 50,
+      };
+    },
   },
   methods: {
     upvote(submissionId) {
@@ -23,7 +29,6 @@ const app = Vue.createApp({
       );
 
       submission.votes++;
-      // this.submissions[0].votes++;
     },
   },
 });
